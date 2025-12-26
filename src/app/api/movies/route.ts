@@ -6,6 +6,8 @@ export async function GET(request: NextRequest) {
   const page = searchParams.get("page") || "1"
   const query = searchParams.get("query") || "";
 
+
+
     const options = {
           headers: {
           Authorization: `Bearer ${process.env.NEXT_API_KEY_MOVIE_DB}`,
